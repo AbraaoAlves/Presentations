@@ -10,5 +10,8 @@
     "code-surfer": "3.1.0",
     "mdx-deck": "3.0.13"
   },
-  "name": "mdx_apresentation"
+  "name": "mdx_apresentation",
+  "dependencies": {
+    "@webcontainer/api": "^1.1.3"
+  }
 }

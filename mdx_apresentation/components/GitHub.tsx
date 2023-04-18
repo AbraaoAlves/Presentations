@@ -44,9 +44,9 @@ export function GitHub() {
           <h1>{kevinData.name}</h1>
           <div className={style.socialMedia}>
               <ul>
-                <li>GitHub</li>
-                <li>Linkedin</li>
-                <li>Instagram</li>
+                <li>GitHub <img src="../assets/qr1.png" alt="" /></li>
+                <li>Linkedin <img src="../assets/qr1.png" alt="" /></li>
+                <li>Instagram <img src="../assets/qr1.png" alt="" /></li>
               </ul>
           </div>
         </div>

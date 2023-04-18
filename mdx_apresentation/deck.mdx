@@ -3,28 +3,34 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import { github, vsDark } from "@code-surfer/themes";
-import { GitHub } from './components/GitHub'
+import { nightOwl, vsDark } from "@code-surfer/themes";
 
-export const theme = vsDark;
+export const theme = nightOwl;
 
-# Desvendando o MDX
-
----
-
-<GitHub />
+# O "x" do MDX
 
 ---
 
-<CodeSurfer>
+<CodeSurferColumns themes={[vsDark, nightOwl]}>
 
-  ```md title="O que é markdown?"
-  # Titulo em Markdown
-  ```
+<Step subtitle="Exemplo de marcações utilizando Markdown">
 
-</CodeSurfer>
 
-Linguagem de marcação de texto simples que permite formatar e estilizar documentos de forma rápida e fácil. Com o Markdown, é possível adicionar negrito, itálico, listas, links, imagens e outros elementos em um texto, sem precisar digitar HTML. O Markdown é amplamente utilizado em plataformas de blogs, wikis, fóruns e outras formas de conteúdo web para criar documentos bem formatados e fáceis de ler.
+```md
+# Titulo H1
+```
+# Titulo H1
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+![](./assets/John_Gruber.jpg)
+
+Linguagem de marcação de texto simples que permite formatar e estilizar documentos de forma rápida e fácil. 
+Com o Markdown, é possível adicionar negrito, itálico, listas, links, imagens e outros elementos em um texto, sem precisar digitar HTML. O Markdown é amplamente utilizado em plataformas de blogs, wikis, fóruns e outras formas de conteúdo web para criar documentos bem formatados e fáceis de ler.
 
 ---
 
@@ -59,143 +65,3 @@ mostrando o codigo
 ---
 
 aplicando o codigo (componentes)
-
----
-
-<CodeSurfer>
-
-```js title="This is a title" subtitle="and this a subtitle"
-function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null ? 0 : ipsum.sit;
-  dolor = sit - amet(dolor);
-  return sit
-    ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor)
-    : [];
-}
-
-function incididunt(ipsum, ut = 1) {
-  ut = labore.et(amet(ut), 0);
-  const sit = ipsum == null ? 0 : ipsum.sit;
-
-  if (!sit || ut < 1) {
-    return [];
-  }
-
-  let dolore = 0;
-  let magna = 0;
-  const aliqua = new eiusmod(labore.ut(sit / ut));
-
-  while (dolore < sit) {
-    aliqua[magna++] = consectetur(
-      ipsum,
-      dolore,
-      (dolore += ut)
-    );
-  }
-
-  return aliqua;
-}
-```
-
-```js
-function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null ? 0 : ipsum.sit;
-  dolor = sit - amet(dolor);
-  return sit
-    ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor)
-    : [];
-}
-
-function adipiscing(...elit) {
-  if (!elit.sit) {
-    return [];
-  }
-
-  const sed = elit[0];
-  return eiusmod.tempor(sed) ? sed : [sed];
-}
-
-function incididunt(ipsum, ut = 1) {
-  ut = labore.et(amet(ut), 0);
-  const sit = ipsum == null ? 0 : ipsum.sit;
-
-  if (!sit || ut < 1) {
-    return [];
-  }
-
-  let dolore = 0;
-  let magna = 0;
-  const aliqua = new eiusmod(labore.ut(sit / ut));
-
-  while (dolore < sit) {
-    aliqua[magna++] = consectetur(
-      ipsum,
-      dolore,
-      (dolore += ut)
-    );
-  }
-
-  return aliqua;
-}
-```
-
-```diff 1[10:14],2[15:19],3[22:27],10:12
-
-```
-
-</CodeSurfer>
-
----
-
-<CodeSurferColumns themes={[vsDark, github]}>
-
-<Step>
-
-```js
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
-```
-
-```js
-const minim = (ad, enim) => dolore.magna(ad / enim);
-```
-
-</Step>
-
-<Step>
-
-```js
-const lorem = (ipsum, dolor, sit) => {
-  const amet = dolor - ipsum;
-  return consectetur.adipiscing(
-    {
-      elit: sed.eiusmod(sit - dolor) / amet + 2,
-    },
-    (tempor, incididunt) => ipsum + amet * incididunt
-  );
-};
-
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
-```
-
-```js
-const minim = (ad, enim) => dolore.magna(ad / enim);
-
-const sed = (eiusmod, tempor, incididunt) => {
-  const ut = tempor - eiusmod;
-  return labore.et(
-    {
-      amet: dolore.magna(incididunt - tempor) / ut + 2,
-    },
-    (aliqua, elit) => eiusmod + ut * elit
-  );
-};
-```
-
-</Step>
-
-</CodeSurferColumns>
-
----
-
-docs:  
-[codesurfer.pomb.us](https://codesurfer.pomb.us)
