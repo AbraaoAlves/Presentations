@@ -11,6 +11,7 @@ interface GitHubData {
 const style = {
   gitHubKevin: 'content',
   socialMedia: 'socialMedia',
+  languages: 'languages',
 }
 
 export function GitHub() {
