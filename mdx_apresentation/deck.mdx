@@ -1,66 +1,124 @@
-import {
-  CodeSurfer,
-  CodeSurferColumns,
-  Step,
-} from "code-surfer";
+import { CodeSurfer, CodeSurferColumns, Step} from "code-surfer";
 import { nightOwl, vsDark } from "@code-surfer/themes";
+import { Image, Notes, Head } from "mdx-deck";
+import { Profile } from './components/Profile'
 
 export const theme = nightOwl;
+
+<Head>
+  <title>Palestra sobre MDX</title>
+</Head>
 
 # O "x" do MDX
 
 ---
 
+### John Gruber
+<Profile src="./assets/John_Gruber.jpg" size={100}/>
+
+#### Criador da ferramenta MarkDown
+
+<Notes>
+2004 por John Gruber
+um escritor e desenvolvedor web americano
+
+sem precisar escrever HTML ou outros códigos mais complexos
+
+</Notes>
+
+---
+
 <CodeSurferColumns themes={[vsDark, nightOwl]}>
 
-<Step subtitle="Exemplo de marcações utilizando Markdown">
-
+<Step subtitle="Definindo títulos em MarkDown">
 
 ```md
-# Titulo H1
+# Título H1
 ```
-# Titulo H1
+
+# Título H1
+
+</Step>
+
+<Step subtitle="Criando Links em markdown">
+
+```md
+[Markdown](https://www.markdownguide.org/)
+```
+
+[Markdown](https://www.markdownguide.org/)
 
 </Step>
 
 </CodeSurferColumns>
 
----
+<Notes>
 
-![](./assets/John_Gruber.jpg)
+O que é: Marcação de texto simples rápido e fácil.
 
-Linguagem de marcação de texto simples que permite formatar e estilizar documentos de forma rápida e fácil. 
-Com o Markdown, é possível adicionar negrito, itálico, listas, links, imagens e outros elementos em um texto, sem precisar digitar HTML. O Markdown é amplamente utilizado em plataformas de blogs, wikis, fóruns e outras formas de conteúdo web para criar documentos bem formatados e fáceis de ler.
+Adicionar: Negrito | Italico | Listas | Links | Imagens
 
----
+MD usado: Foruns | Blogs | Wikis
 
-quem criou?
-O Markdown foi inventado em 2004 por John Gruber, um escritor e desenvolvedor web americano, em colaboração com Aaron Swartz, um programador e ativista da internet. Gruber criou o Markdown como uma forma mais simples e fácil de criar documentos bem formatados para a web, sem precisar escrever HTML ou outros códigos mais complexos. Desde então, o Markdown se tornou uma das linguagens de marcação mais populares na web, sendo utilizada por muitos programadores, escritores e profissionais de comunicação.
+</Notes>
 
 ---
 
-exemplo de markdown e seu uso na web
+:scream:
+Mas afinal o que diabos é o MDX??
+:scream:
 
 ---
 
-o que é o mdx?
+<CodeSurferColumns themes={[nightOwl, vsDark]}>
 
-MDX é uma extensão da linguagem Markdown que permite incluir componentes React em seus arquivos Markdown. Com o MDX, é possível criar documentos mais interativos, com funcionalidades avançadas, como gráficos, tabelas dinâmicas e outras visualizações de dados. O MDX é amplamente utilizado para criar documentação, apresentações, blogs e outras formas de conteúdo web.
+<Step>
+
+<Profile src="./assets/Christopher_Chedeau.jpg" size={100} />
+
+## Christopher Chedeau
+
+</Step>
+
+</CodeSurferColumns>
+
+<Notes>
+Markdown Extention
+
+Permite incluir componentes React em seus arquivos markdown
+
+Criado por: Christopher vjeux Chedeau em 2017
+como uma extensão do markdown
+
+engenheiro de software do Facebook
+
+interativo e funcional
+
+</Notes>
 
 ---
 
-quem inventou?
-O MDX foi criado em 2017 por Christopher "vjeux" Chedeau, um engenheiro de software do Facebook, como uma extensão do Markdown que permite incluir componentes React em arquivos Markdown. O objetivo do MDX é permitir a criação de conteúdo web mais interativo e funcional, que pode incluir gráficos, tabelas dinâmicas e outras visualizações de dados. Desde então, o MDX se tornou uma ferramenta popular entre desenvolvedores web e escritores que desejam criar conteúdo mais avançado e dinâmico.
+Atualmente tempo diversas empresas apoiando e usando o MDX
+
+![](https://github.com/gatsbyjs.png)
+![](https://github.com/amzn.png)
+![](https://github.com/facebook)
+
+<Notes>
+
+Apoiadores
+
+Ract -> Documentação
+Gistby -> Criação de sites estaticos
+Amazon Web Services -> Documentação
+
+</Notes>
 
 ---
 
-quem apoia?
-O MDX é apoiado por uma ampla comunidade de desenvolvedores, escritores e empresas que reconhecem os benefícios de combinar as funcionalidades do React com a simplicidade do Markdown. Alguns dos principais defensores do MDX incluem empresas como a Gatsby, que utiliza o MDX para criar sites estáticos avançados, e a Amazon Web Services (AWS), que utiliza o MDX para criar documentação interativa e avançada. Além disso, o MDX é amplamente utilizado em projetos open source, incluindo o próprio projeto React da Facebook, bem como em outras bibliotecas e frameworks do ecossistema React.
+## Já entendemos a importância do MDX!
 
----
-
-como usar?
-mostrando o codigo
+Mas é agora? Qual próximo passo??
 
 ---
 
