@@ -1,11 +1,14 @@
 import { CodeSurfer, CodeSurferColumns, Step} from "code-surfer";
-import { nightOwl, vsDark } from "@code-surfer/themes";
 import { Image, Notes, Head } from "mdx-deck";
 import { Profile } from './components/Profile';
+import { Button } from './components/Button'
+import { nightOwl, vsDark } from "@code-surfer/themes";
+import customTheme from "./customTheme"
+
 
 export const theme = nightOwl;
 
-<Head>
+<Head >
   <title>Palestra sobre MDX</title>
 </Head>
 
@@ -126,4 +129,24 @@ Mas é agora? Qual próximo passo??
 
 ---
 
-aplicando o codigo (componentes)
+<CodeSurfer theme={customTheme}>
+
+```jsx file='./components/Button.tsx' subtitle="Componente Button"
+```
+
+```jsx 1:2 file='./components/Button.tsx' subtitle="Realizamos os imports"
+```
+
+```jsx 4:9 file='./components/Button.tsx' subtitle="Criamos a interface do botão"
+```
+
+```jsx 11 file='./components/Button.tsx' subtitle="Declaramos a função"
+```
+
+```jsx 13 file='./components/Button.tsx' subtitle="Criamos os States"
+```
+
+```jsx 15:21 file='./components/Button.tsx' subtitle="Criando função "
+```
+
+</CodeSurfer>
