@@ -1,11 +1,16 @@
 import React from 'react'
 import { useState } from 'react';
+import './Button.css'
 
 interface ButtonProps {
   text: string,
   stateBtn?: boolean,
   type?: 'submit' | 'button' | 'reset'
   onClick?: (b : boolean) => void;
+}
+
+const style = {
+  classBtn: 'classBtn',
 }
 
 export function Button(props: ButtonProps) {
@@ -21,6 +26,7 @@ export function Button(props: ButtonProps) {
 
   return (
     <button  
+    className={style.classBtn}
     onClick={handleClick}
     type={props.type}>
       {props.text}
