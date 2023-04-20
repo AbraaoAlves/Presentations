@@ -1,0 +1,13 @@
+diff --git a/node_modules/code-surfer/dist/code-surfer.cjs.development.js b/node_modules/code-surfer/dist/code-surfer.cjs.development.js
+index 2074a95..114cf6a 100644
+--- a/node_modules/code-surfer/dist/code-surfer.cjs.development.js
++++ b/node_modules/code-surfer/dist/code-surfer.cjs.development.js
+@@ -303,7 +303,7 @@ function Column(_ref2) {
+       alignItems: "center",
+       height: "100%"
+     }
+-  }, column.steps[Math.round(progress)].element));
++  }, React.createElement(themes.StylesProvider, {theme: theme}, column.steps[Math.round(progress)].element) ));
+ }
+ 
+ function Title(_ref3) {

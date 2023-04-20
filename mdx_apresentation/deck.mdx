@@ -2,7 +2,7 @@ import { CodeSurfer, CodeSurferColumns, Step} from "code-surfer";
 import { Image, Notes, Head } from "mdx-deck";
 import { Profile } from './components/Profile';
 import { Button } from './components/Button'
-import { nightOwl, vsDark } from "@code-surfer/themes";
+import { nightOwl, vsDark, ultramin } from "@code-surfer/themes";
 import customTheme from "./customTheme"
 
 
@@ -16,22 +16,25 @@ export const theme = nightOwl;
 
 ---
 
-### John Gruber
-<Profile src="https://macmagazine.com.br/wp-content/uploads/2009/08/20-johngruber.png" size={500}/>
+<CodeSurferColumns>
 
-#### Criador da ferramenta MarkDown
+<Step title="John Gruber">
 
-<Notes>
-2004 por John Gruber
-um escritor e desenvolvedor web americano
+<Profile src="https://macmagazine.com.br/wp-content/uploads/2009/08/20-johngruber.png" size={450}/>
 
-sem precisar escrever HTML ou outros códigos mais complexos
+</Step>
 
-</Notes>
+<Step title="Aaron Swartz">
+
+<Profile src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aaron_Swartz_2_at_Boston_Wikipedia_Meetup%2C_2009-08-18.jpg/1024px-Aaron_Swartz_2_at_Boston_Wikipedia_Meetup%2C_2009-08-18.jpg" size={450} />
+
+</Step>
+
+</CodeSurferColumns>
 
 ---
 
-<CodeSurferColumns themes={[vsDark, nightOwl]}>
+<CodeSurferColumns themes={[vsDark, ultramin]}>
 
 <Step subtitle="Definindo títulos em MarkDown">
 
@@ -57,11 +60,13 @@ sem precisar escrever HTML ou outros códigos mais complexos
 
 <Notes>
 
-O que é: Marcação de texto simples rápido e fácil.
+O que é: Marcação de texto simples rápido e FACIL.
 
 Adicionar: Negrito | Italico | Listas | Links | Imagens
 
 MD usado: Foruns | Blogs | Wikis
+
+exemplo da carta, ou blog, da pra escrever sem html
 
 </Notes>
 
@@ -73,7 +78,7 @@ Mas afinal o que diabos é o MDX??
 
 ---
 
-<CodeSurferColumns themes={[nightOwl, vsDark]}>
+<CodeSurferColumns themes={[nightOwl, ultramin]}>
 
 <Step>
 
@@ -101,35 +106,13 @@ interativo e funcional
 
 ---
 
-### Algumas empresas que apoiam e usa o MDX
-
-<div>
-  <Profile src="https://github.com/gatsbyjs.png" size={80} />
-  <Profile src="https://github.com/amzn.png" size={80} />
-  <Profile src="https://github.com/facebook.png" size={80} />
-</div>
-
-<Notes>
-
-Apoiadores
-
-Ract -> Documentação interativa
-
-Gistby -> Criação de sites estaticos
-
-Amazon Web Services -> Documentação interativa
-
-</Notes>
-
----
-
 ## Já entendemos a importância do MDX!
 
 Mas é agora? Qual próximo passo??
 
 ---
 
-<CodeSurferColumns themes={[vsDark, nightOwl]}>
+<CodeSurferColumns themes={[vsDark, ultramin]}>
 
 <Step title='Criaremos um componente com Ract'>
 
@@ -208,3 +191,47 @@ Mas é agora? Qual próximo passo??
 </Step>
 
 </CodeSurferColumns>
+
+---
+
+### Algumas empresas que apoiam e usa o MDX
+
+<div>
+  <Profile src="https://github.com/facebook.png" size={80} />
+  <Profile src="https://githubnext.com/assets/images/next-octocat.svg" size={80} />
+  <Profile src="https://github.com/amzn.png" size={80} />
+
+  <Profile src="https://github.com/gatsbyjs.png" size={80} />
+  <Profile src="https://www.svgrepo.com/show/354512/vercel.svg" size={80} />
+  
+</div>
+
+<Notes>
+
+Apoiadores
+
+Ract -> Documentação interativa
+
+Amazon Web Services -> Documentação interativa
+
+Github next -> Documentação interativa
+
+Gistby -> Criação de sites estaticos
+
+Vercel -> Criação de sites estaticos
+
+</Notes>
+
+---
+
+### Ferramentas que usam o MDX
+
+- [Criando stories](https://storybook.js.org/docs/react/writing-docs/mdx) - Storybook
+- [Criando sites e blog com mdx](https://nextjs.org/blog/markdown) - Vercel
+- [Criar documentação com mdx de forma facil](https://github.com/facebook/docusaurus/issues/4029) - Facebook
+- [Github Code Blocks](https://blocks.githubnext.com/)
+- [WebContainer](https://webcontainers.io/) - StackBlitz
+- [codehike](https://codehike.org/)
+- [codesurfer](https://codesurfer.pomb.us/)
+- [mdx-deck](mdx-deck)
+

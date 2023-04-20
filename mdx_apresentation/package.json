@@ -4,7 +4,8 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "test": "echo \"there are no tests\""
+    "test": "echo \"there are no tests\"",
+    "postinstall": "npx patch-package"
   },
   "devDependencies": {
     "code-surfer": "3.1.0",

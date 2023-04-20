@@ -1,7 +1,7 @@
 // custom-theme.js
 export default {
     colors: {
-      background: "#222",
+      background: "#fff",
       text: "#ddd",
       primary: "#a66"
     },
